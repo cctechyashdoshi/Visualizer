@@ -85,4 +85,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Source Files\cube.stl">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

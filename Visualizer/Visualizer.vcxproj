@@ -109,6 +109,9 @@
     <ClInclude Include="Header Files\Triangle.h" />
     <ClInclude Include="Header Files\Triangulation.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Source Files\cube.stl" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
     <Import Project="$(QtMsBuild)\qt.targets" />

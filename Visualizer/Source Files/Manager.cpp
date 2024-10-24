@@ -10,4 +10,5 @@ void Manager::managerMain(std::string inputFile)
     Triangulation triangulation;
     reader.read(inputFile, triangulation);
     writer.writeToFile("output.dat", triangulation);
+    std::exit(0);
 }
