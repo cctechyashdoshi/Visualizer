@@ -18,7 +18,6 @@ STLReader::~STLReader()
 void STLReader::read(std::string& inputFile, Triangulation& triangulation) {
     ifstream myfile(inputFile);
 
-    // Check if the file could be opened
     if (!myfile.is_open()) {
         throw runtime_error("Error: Unable to open the file: " + inputFile);
     }
