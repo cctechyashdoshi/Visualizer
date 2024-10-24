@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VisualizerClass</class>
+ <widget class="QMainWindow" name="VisualizerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Visualizer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string>
+     QWidget {
+         background-color: #2C2F33;
+         color: #DCDDDE;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-size: 14px;
+     }
+     QPushButton {
+         background-color: #7289DA;
+         color: white;
+         border-radius: 10px;
+         border: 1px solid #99AAB5;
+         padding: 8px 16px;
+         font-size: 14px;
+     }
+     QPushButton:hover {
+         background-color: #5B6EAE;
+     }
+     QTextEdit {
+         background-color: #23272A;
+         color: #DCDDDE;
+         border: 1px solid #99AAB5;
+         border-radius: 5px;
+         padding: 8px;
+     }
+    </string>
+   </property>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>80</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>50</y>
+      <width>261</width>
+      <height>40</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>
+     QMenuBar {
+         background-color: #2C2F33;
+         color: #DCDDDE;
+         border-bottom: 1px solid #99AAB5;
+     }
+     QMenuBar::item {
+         background-color: #2C2F33;
+         color: #DCDDDE;
+     }
+     QMenuBar::item:selected {
+         background-color: #7289DA;
+     }
+    </string>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="styleSheet">
+    <string>
+     QToolBar {
+         background-color: #2C2F33;
+         border: none;
+         color: white;
+     }
+     QToolBar::separator {
+         background-color: #99AAB5;
+     }
+    </string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string>
+     QStatusBar {
+         background-color: #23272A;
+         color: #DCDDDE;
+         border-top: 1px solid #99AAB5;
+     }
+    </string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="10" margin="15"/>
+ <resources>
+  <include location="Visualizer.qrc"/>
+ </resources>
+ <connections/>
+</ui>
