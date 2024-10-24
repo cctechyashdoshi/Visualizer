@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="styleSheet">
-    <string>
+    <string notr="true">
      QWidget {
          background-color: #2C2F33;
          color: #DCDDDE;
@@ -40,13 +40,33 @@
          border-radius: 5px;
          padding: 8px;
      }
+     QLabel {
+         color: #99AAB5;
+         font-size: 16px;
+     }
     </string>
    </property>
+   <widget class="QLabel" name="appDescriptionLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>600</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Welcome to Visualizer! This app helps you convert STL to DAT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
    <widget class="QPushButton" name="startButton">
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>150</y>
+      <y>200</y>
       <width>80</width>
       <height>40</height>
      </rect>
@@ -59,7 +79,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>50</y>
+      <y>120</y>
       <width>261</width>
       <height>40</height>
      </rect>
@@ -72,7 +92,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="styleSheet">
